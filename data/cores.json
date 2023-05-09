@@ -1,9 +1,7 @@
     {
-        "item": "meiaQuadrada",
-        "cores":[
-                "amarela": "../img/MAT - Q/meia amarela.jpg",
-                "preta": "../img/MAT - Q/meia preta.jpg",
-                "branca": "../img/MAT - Q/meia branca.jpg",
-                "vermelha": "../img/MAT - Q/meia vermelha.jpg"
-        ] 
+        "item": "meiaQuadrada"
+        "amarela": "../img/MAT - Q/meia amarela.jpg",
+        "preta": "../img/MAT - Q/meia preta.jpg",
+        "branca": "../img/MAT - Q/meia branca.jpg",
+        "vermelha": "../img/MAT - Q/meia vermelha.jpg" 
     }    
