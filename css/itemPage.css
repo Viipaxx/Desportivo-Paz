@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 10px 20px;
+}
+
+.icon-back{
+    position: absolute;
+    color: white;
+    top: 35px;
+    left: 35px;
+}
+
+.content-img img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.content-info h3 {
+    font-size: 26px;
+
+}
+
+.description {
+    margin: 20px 0;
+    color: #888888;
+    font-size: 18px;
+}
+
+.price {
+    margin: 30px 0;
+    font-size: 20px;
+    color: #222;
+    font-weight: 500;
+}
+
+.price span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px 0;
+    font-weight: bolder;
+    font-size: 20px;
+}
