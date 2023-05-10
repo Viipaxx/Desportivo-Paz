@@ -15,7 +15,7 @@ updateProducts = (produto) => {
             <img src="${element.foto}" alt="${element.produto}">
         </div>
         <div class="product-info">
-            <a href="assets/htMl/itemPage.html">
+            <a href="assets/html/itemPage.html">
                 <h3 class="produto">${element.produto}</h3>
             </a>
             <p>${element.descricao}</p>
@@ -23,7 +23,6 @@ updateProducts = (produto) => {
         </div>
       </li>`
     }).join('')
-    console.log(produto[0].foto)
 }
 
 (async () => {
