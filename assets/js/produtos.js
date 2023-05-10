@@ -12,10 +12,10 @@ updateProducts = (produto) => {
     products.innerHTML = produto.map((element) => {
         return `<li class="product">
         <div class="product-img">
-            <img src="assets/img/MAT - Q/todas as meias.jpg" alt="Meias Antiderrapante">
+            <img src="${element.foto}" alt="Meias Antiderrapante">
         </div>
         <div class="product-info">
-            <a href="#">
+            <a href="assets/htMl/itemPage.html">
                 <h3 class="produto">${element.produto}</h3>
             </a>
             <p>${element.descricao}</p>
