@@ -23,6 +23,7 @@ updateProducts = (produto) => {
         </div>
       </li>`
     }).join('')
+    console.log(produto[0].foto)
 }
 
 (async () => {
