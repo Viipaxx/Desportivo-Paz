@@ -12,7 +12,7 @@
         },
         {
             "id": 2,
-            "foto": "",
+            "foto": "assets/img/LLuva/luva.jfif",
             "produto":"Luvas - Nike",
             "descricao": "Luvas para goleiro, super confortável, 100% algodão",
             "price": 79.99,
