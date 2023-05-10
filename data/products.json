@@ -2,7 +2,7 @@
     "produtos": [
         {
             "id": 1,
-            "foto": "../assets/img/MAT-Q/fotoPrincipal.jpg",
+            "foto": "assets/img/MAT-Q/fotoPrincipal.jpg",
             "produto": "Meias Antiderrapante",
             "descricao": "Meias Antiderrapante com costas em formarto de quadrado",
             "price": 15.99,
@@ -12,7 +12,7 @@
         },
         {
             "id": 2,
-            "foto": "1",
+            "foto": "",
             "produto":"Luvas - Nike",
             "descricao": "Luvas para goleiro, super confortável, 100% algodão",
             "price": 79.99,
@@ -22,7 +22,7 @@
         },
         {
             "id": 3,
-            "foto": "1",
+            "foto": "",
             "produto":"Calção Térmico - Nike",
             "descricao": "Calção Térmico, super confortável",
             "price": 49.99,
