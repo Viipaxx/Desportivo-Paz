@@ -12,7 +12,7 @@ updateProducts = (produto) => {
     products.innerHTML = produto.map((element) => {
         return `<li class="product">
         <div class="product-img">
-            <img src="${element.foto}" alt="Meias Antiderrapante">
+            <img src="${element.foto}" alt="${element.produto}">
         </div>
         <div class="product-info">
             <a href="assets/htMl/itemPage.html">
@@ -23,7 +23,6 @@ updateProducts = (produto) => {
         </div>
       </li>`
     }).join('')
-
 }
 
 (async () => {

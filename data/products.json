@@ -12,6 +12,7 @@
         },
         {
             "id": 2,
+            "foto": "",
             "produto":"Luvas - Nike",
             "descricao": "Luvas para goleiro, super confortável, 100% algodão",
             "price": 79.99,
@@ -21,6 +22,7 @@
         },
         {
             "id": 3,
+            "foto": "",
             "produto":"Calção Térmico - Nike",
             "descricao": "Calção Térmico, super confortável",
             "price": 49.99,
