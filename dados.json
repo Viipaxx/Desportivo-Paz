@@ -1,0 +1,32 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "produto": "Meias Antiderrapante",
+            "descricao": "Meias Antiderrapante com costas em formarto de quadrado",
+            "price": 15.99,
+            "cores": {
+                
+            }
+        },
+        {
+            "id": 2,
+            "produto":"Luvas - Nike",
+            "descricao": "Luvas para goleiro, super confortável, 100% algodão",
+            "price": 79.99,
+            "cores": {
+                
+            }
+        },
+        {
+            "id": 3,
+            "produto":"Calção Térmico - Nike",
+            "descricao": "Calção Térmico, super confortável",
+            "price": 49.99,
+            "cores": {
+                
+            }
+        }
+        
+    ]
+}
