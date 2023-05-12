@@ -2,7 +2,7 @@ pegaProduto = () => {
     const item = document.querySelectorAll(".produto");
     item.forEach((e) => {
         e.addEventListener("click", (element) => {
-            console.log(element.target)
+            console.log(element.target.id)
         });
     });
 }
@@ -16,7 +16,7 @@ updateProducts = (produto) => {
         </div>
         <div class="product-info">
         <a href="#">
-        <h3 class="produto">${element.produto}</h3>
+        <h3 id="${element.id}" class="produto">${element.produto}</h3>
         </a>
         <p>${element.descricao}</p>
         <span>$${element.price}</span>
