@@ -1,27 +1,27 @@
-const item = document.querySelectorAll(".produto");
-
-item.forEach((e) => {
-    e.addEventListener("click", (element) => {
-        setProduct(element.target)
+pegaProduto = () => {
+    const item = document.querySelectorAll(".produto");
+    item.forEach((e) => {
+        e.addEventListener("click", (element) => {
+            console.log(element.target)
+        });
     });
-});
+}
 
 updateProducts = (produto) => {
-    const products = document.querySelector('.products ul')
-
+    const products = document.querySelector('.products ul');
     products.innerHTML = produto.map((element) => {
         return `<li class="product">
         <div class="product-img">
-            <img src="${element.foto}" alt="${element.produto}">
+        <img src="${element.foto}" alt="${element.produto}">
         </div>
         <div class="product-info">
-            <a href="assets/html/itemPage.html">
-                <h3 class="produto">${element.produto}</h3>
-            </a>
-            <p>${element.descricao}</p>
-            <span>$${element.price}</span>
+        <a href="#">
+        <h3 class="produto">${element.produto}</h3>
+        </a>
+        <p>${element.descricao}</p>
+        <span>$${element.price}</span>
         </div>
-      </li>`
+        </li>`
     }).join('')
 }
 
@@ -29,5 +29,6 @@ updateProducts = (produto) => {
     const produtos = await getProduct()
     setTimeout(() => {
         updateProducts(produtos)
+        pegaProduto()
     }, 1000);
 })()
