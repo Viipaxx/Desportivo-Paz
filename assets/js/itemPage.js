@@ -15,8 +15,8 @@ updateProduct = (produto) => {
             </div>
             <div class="content-info">
                 <h3 id="product">${produto.produto}</h3>
-                <p class="description" id="description">loading...</p>
-                <p class="price">Price: <span id="price">loading...</span></p>
+                <p class="description" id="description">${produto.descricao}</p>
+                <p class="price">Price: <span id="price">${produto.price}</span></p>
             </div>
                 <a id="red" href="">
                     <button id="buy" type="button">Buy Now</button>

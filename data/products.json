@@ -2,7 +2,8 @@
     "produtos": [
         {
             "id": 1,
-            "foto": "./DP (DESPORTIVO PAZ)/assets/img/MAT-Q/fotoPrincipal.jpg",
+            "fotoItem": "../img/MAT-Q/fotoPrincipal.jpg",
+            "foto": "/assets/img/MAT-Q/fotoPrincipal.jpg",
             "produto": "Meias Antiderrapante",
             "descricao": "Meias Antiderrapante com costas em formarto de quadrado",
             "price": 15.99,
@@ -13,6 +14,7 @@
         {
             "id": 2,
             "foto": "assets/img/Luva/luva.jpg",
+            "fotoItem": "../img/Luva/luva.jpg",
             "produto":"Luvas - Nike",
             "descricao": "Luvas para goleiro, super confortável, 100% algodão",
             "price": 79.99,
@@ -22,7 +24,8 @@
         },
         {
             "id": 3,
-            "foto": "",
+            "foto": "assets/img/Luva/luva.jpg",
+            "fotoItem": "../img/Luva/luva.jpg",
             "produto":"Calção Térmico - Nike",
             "descricao": "Calção Térmico, super confortável",
             "price": 49.99,
