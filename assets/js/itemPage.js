@@ -15,14 +15,14 @@ getIdItem = (produto) => {
 };
 
 getColors = (produto) => {
-    const cores =  produto.cores.map((cor) => {
+    const maisFotos =  produto.tipos.map((tipo) => {
         return `
             <li class="colors">
-                <img src="${cor}">
+                <img src="${tipo}">
             </li>
                `
         }).join('')
-    return cores
+    return maisFotos
 }
 
 updateProduct = (produto) => {

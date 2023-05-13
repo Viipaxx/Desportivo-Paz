@@ -7,7 +7,7 @@
             "produto": "Meias Antiderrapante",
             "descricao": "Meias Antiderrapante com costas em formarto de quadrado",
             "price": 15.99,
-            "cores": [
+            "tipos": [
                 "../img/MAT-Q/meia amarela.jpg",
                 "../img/MAT-Q/meia azul claro.jpg",
                 "../img/MAT-Q/meia azul escuro.jpg",
@@ -26,7 +26,7 @@
             "produto":"Luvas - Nike",
             "descricao": "Luvas para goleiro, super confortável, 100% algodão",
             "price": 79.99,
-            "cores": {
+            "tipos": {
                 
             }
         },
@@ -34,10 +34,10 @@
             "id": 3,
             "foto": "assets/img/Luva/luva.jpg",
             "fotoItem": "../img/Luva/luva.jpg",
-            "produto":"Camisa de Time",
-            "descricao": "Camisa de Time, 1ª linha",
+            "produto":"Camisa de Time - Flamengo",
+            "descricao": "Camisa do Time do Flamengo, 1ª linha",
             "price": 149.99,
-            "cores": {
+            "tipos": {
                 
             }
         }
