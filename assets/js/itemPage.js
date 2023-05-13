@@ -28,6 +28,6 @@ updateProduct = (produto) => {
 (async () => {
   const produtos = await getProduct();
   setTimeout(() => {
-    getItem(produtos, 1);
+    getItem(produtos, 2);
   }, 1000);
 })();

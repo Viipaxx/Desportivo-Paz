@@ -3,7 +3,7 @@
         {
             "id": 1,
             "fotoItem": "../img/MAT-Q/fotoPrincipal.jpg",
-            "foto": "/assets/img/MAT-Q/fotoPrincipal.jpg",
+            "foto": "assets/img/MAT-Q/fotoPrincipal.jpg",
             "produto": "Meias Antiderrapante",
             "descricao": "Meias Antiderrapante com costas em formarto de quadrado",
             "price": 15.99,
