@@ -32,6 +32,7 @@ getColors = (produto) => {
     
 updateProduct = (produto) => {
   const content = document.querySelector(".content");
+  document.title = produto.produto
   content.innerHTML = `
             <div class="content-img">
                 <img id="img-prod" src="${produto.fotoItem}" alt="" />

@@ -21,11 +21,12 @@ a {
 }
 
 .content-img img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 20px;
 }
 
 .otherColours {
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
