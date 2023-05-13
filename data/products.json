@@ -26,9 +26,7 @@
             "produto":"Luvas - Nike",
             "descricao": "Luvas para goleiro, super confortável, 100% algodão",
             "price": 79.99,
-            "tipos": {
-                
-            }
+            "tipos": []
         },
         {
             "id": 3,
@@ -37,9 +35,7 @@
             "produto":"Camisa de Time - Flamengo",
             "descricao": "Camisa do Time do Flamengo, 1ª linha",
             "price": 149.99,
-            "tipos": {
-                
-            }
+            "tipos": []
         }
         
     ]
