@@ -1,14 +1,24 @@
 getNumberURL = () => {
-    var query = location.search.slice(1)
-    var id = query.split('=')
-    return id[1]
-}
+  var query = location.search.slice(1);
+  var id = query.split("=");
+  return id[1];
+};
 
 getItem = (produto) => {
-    produto.filter((e) => {
-        if (e.id == getNumberURL()){
-            updateProduct(e)
-        }
+  produto.filter((e) => {
+    if (e.id == getNumberURL()) {
+      updateProduct(e);
+    }
+  });
+};
+
+getColors = (produto) => {
+    produto.cores.map((cor) => {
+        return `
+                <li class="colors">
+                    <img src="${cor}">
+                </li>
+               `
     })
 }
 
@@ -18,6 +28,11 @@ updateProduct = (produto) => {
             <div class="content-img">
                 <img id="img-prod" src="${produto.fotoItem}" alt="" />
             </div>
+            <section>
+                <ul class="otherColours">
+                ${getColors(produto)}
+                </ul>
+            </section>
             <div class="content-info">
                 <h3 id="product">${produto.produto}</h3>
                 <p class="description" id="description">${produto.descricao}</p>
@@ -27,7 +42,7 @@ updateProduct = (produto) => {
                     <button id="buy" type="button">Buy Now</button>
                 </a>
             </div>
-           `
+           `;
 };
 
 (async () => {

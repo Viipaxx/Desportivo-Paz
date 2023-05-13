@@ -30,12 +30,23 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    list-style: none;
+    gap: 10px;
 }
 
 .colors {
-    width: 50px;
-    height: 50px;
-    border: 1px solid;
+    width: 35px;
+    height: 35px;
+    border: 1px transparent;
+    transition: transform .2s;
+}
+
+.colors img {
+    max-width: 100%;
+}
+
+.colors:hover {
+    transform: scale(3);
 }
 
 .content-info h3 {
