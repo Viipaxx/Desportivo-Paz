@@ -11,7 +11,7 @@ updateProduct = (produto) => {
   const content = document.querySelector(".content");
   content.innerHTML = `
             <div class="content-img">
-                <img id="img-prod" src="${produto.foto}" alt="" />
+                <img id="img-prod" src="${produto.fotoItem}" alt="" />
             </div>
             <div class="content-info">
                 <h3 id="product">${produto.produto}</h3>
@@ -28,6 +28,6 @@ updateProduct = (produto) => {
 (async () => {
   const produtos = await getProduct();
   setTimeout(() => {
-    getItem(produtos, 2);
+    getItem(produtos, 1);
   }, 1000);
 })();
