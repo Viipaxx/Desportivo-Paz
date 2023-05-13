@@ -7,6 +7,7 @@ pegaProduto = () => {
     });
 }
 
+
 updateProducts = (produto) => {
     const products = document.querySelector('.products ul');
     products.innerHTML = produto.map((element) => {
@@ -15,7 +16,7 @@ updateProducts = (produto) => {
         <img src="${element.foto}" alt="${element.produto}">
         </div>
         <div class="product-info">
-        <a href="#">
+        <a href="assets/html/itemPage.html?=${element.id}">
         <h3 id="${element.id}" class="produto">${element.produto}</h3>
         </a>
         <p>${element.descricao}</p>
