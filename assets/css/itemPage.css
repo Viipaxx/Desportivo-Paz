@@ -31,27 +31,32 @@ a {
     justify-content: center;
     align-items: center;
     list-style: none;
-    gap: 10px;
+    gap: 3px;
+    margin-bottom: 20px;
 }
 
 .colors {
     width: 35px;
     height: 35px;
-    border: 1px transparent;
     transition: transform .2s;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.colors img {
+.colors img{
     max-width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 0 0.8px;
 }
 
-.colors:hover {
-    transform: scale(3);
+.colors:hover{
+    transform: scale(2.5);
 }
 
 .content-info h3 {
     font-size: 26px;
-
 }
 
 .description {

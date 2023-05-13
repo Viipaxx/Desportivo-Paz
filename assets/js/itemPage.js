@@ -13,13 +13,14 @@ getItem = (produto) => {
 };
 
 getColors = (produto) => {
-    produto.cores.map((cor) => {
+    const cores =  produto.cores.map((cor) => {
         return `
-                <li class="colors">
-                    <img src="${cor}">
-                </li>
+            <li class="colors">
+                <img src="${cor}">
+            </li>
                `
-    })
+        }).join('')
+    return cores
 }
 
 updateProduct = (produto) => {
@@ -30,7 +31,7 @@ updateProduct = (produto) => {
             </div>
             <section>
                 <ul class="otherColours">
-                ${getColors(produto)}
+                   ${getColors(produto)}
                 </ul>
             </section>
             <div class="content-info">
