@@ -1,10 +1,20 @@
+getBuyNow = () => {
+    const buy = document.getElementById('buy')
+
+    buy.addEventListener('click', () => {
+        const red = document.getElementById('red')
+        alert('Você está sendo redirecionado!')
+        red.href = 'https://wa.me/+5581997806196?text=Olá, gostaria de fazer um pedido!'
+    })
+}
+
 getNumberURL = () => {
   var query = location.search.slice(1);
   var id = query.split("=");
   return id[1];
 };
 
-getItem = (produto) => {
+getIdItem = (produto) => {
   produto.filter((e) => {
     if (e.id == getNumberURL()) {
       updateProduct(e);
@@ -49,6 +59,7 @@ updateProduct = (produto) => {
 (async () => {
   const produtos = await getProduct();
   setTimeout(() => {
-    getItem(produtos);
+    getIdItem(produtos);
+    getBuyNow()
   }, 1000);
 })();
