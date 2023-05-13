@@ -1,8 +1,14 @@
+pegarId = () => {
+    var query = location.search.slice(1)
+    var id = query.split('=')
+    return id[1]
+}
 
-getItem = (produto, id) => {
+getItem = (produto) => {
     produto.filter((e) => {
-        if (e.id === id){
+        if (e.id == pegarId()){
             updateProduct(e)
+            console.log(pegarId())
         }
     })
 }
@@ -28,6 +34,6 @@ updateProduct = (produto) => {
 (async () => {
   const produtos = await getProduct();
   setTimeout(() => {
-    getItem(produtos, 1);
+    getItem(produtos);
   }, 1000);
 })();

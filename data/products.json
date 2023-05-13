@@ -26,9 +26,9 @@
             "id": 3,
             "foto": "assets/img/Luva/luva.jpg",
             "fotoItem": "../img/Luva/luva.jpg",
-            "produto":"Calção Térmico - Nike",
-            "descricao": "Calção Térmico, super confortável",
-            "price": 49.99,
+            "produto":"Camisa de Time",
+            "descricao": "Camisa de Time, 1ª linha",
+            "price": 149.99,
             "cores": {
                 
             }
