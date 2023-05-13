@@ -1,4 +1,4 @@
-pegarId = () => {
+getNumberURL = () => {
     var query = location.search.slice(1)
     var id = query.split('=')
     return id[1]
@@ -6,9 +6,8 @@ pegarId = () => {
 
 getItem = (produto) => {
     produto.filter((e) => {
-        if (e.id == pegarId()){
+        if (e.id == getNumberURL()){
             updateProduct(e)
-            console.log(pegarId())
         }
     })
 }

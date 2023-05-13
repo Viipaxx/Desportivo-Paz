@@ -1,4 +1,4 @@
-pegaProduto = () => {
+getProductClass = () => {
     const item = document.querySelectorAll(".produto");
     item.forEach((e) => {
         e.addEventListener("click", (element) => {
@@ -30,6 +30,6 @@ updateProducts = (produto) => {
     const produtos = await getProduct()
     setTimeout(() => {
         updateProducts(produtos)
-        pegaProduto()
+        getProductClass()
     }, 1000);
 })()

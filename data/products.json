@@ -7,9 +7,17 @@
             "produto": "Meias Antiderrapante",
             "descricao": "Meias Antiderrapante com costas em formarto de quadrado",
             "price": 15.99,
-            "cores": {
-                
-            }
+            "cores": [
+                "../img/MAT-Q/meia amarela.jpg",
+                "../img/MAT-Q/meia azul claro.jpg",
+                "../img/MAT-Q/meia azul escuro.jpg",
+                "../img/MAT-Q/meia azul royal.jpg",
+                "../img/MAT-Q/meia branca.jpg",
+                "../img/MAT-Q/meia laranja.jpg",
+                "../img/MAT-Q/meia preta.jpg",
+                "../img/MAT-Q/meia verde fluorescente.jpg",
+                "../img/MAT-Q/meia vermelha.jpg"
+            ]
         },
         {
             "id": 2,
