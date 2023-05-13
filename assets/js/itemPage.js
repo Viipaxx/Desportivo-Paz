@@ -15,16 +15,21 @@ getIdItem = (produto) => {
 };
 
 getColors = (produto) => {
-    const maisFotos =  produto.tipos.map((tipo) => {
-        return `
-            <li class="colors">
-                <img src="${tipo}">
-            </li>
-               `
-        }).join('')
-    return maisFotos
-}
 
+    if (produto.tipos.length > 0){
+        const maisFotos =  produto.tipos.map((tipo) => {
+            return `
+            <li class="colors">
+            <img src="${tipo}">
+            </li>
+            `
+        }).join('')
+        return maisFotos
+    } else {
+        return ""
+    }
+    }
+    
 updateProduct = (produto) => {
   const content = document.querySelector(".content");
   content.innerHTML = `
