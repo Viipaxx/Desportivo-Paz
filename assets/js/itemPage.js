@@ -59,5 +59,6 @@ updateProduct = (produto) => {
   setTimeout(() => {
     getIdItem(produtos);
     getBuyNow()
+    pegaImagem() 
   }, 1000);
 })();
