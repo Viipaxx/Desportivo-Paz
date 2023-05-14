@@ -2,7 +2,7 @@ getProductClass = () => {
   const item = document.querySelectorAll(".produto");
   item.forEach((e) => {
     e.addEventListener("click", (element) => {
-      console.log(element.target.id);
+        console.log(element.target.id)
     });
   });
 };
