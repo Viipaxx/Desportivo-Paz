@@ -208,6 +208,30 @@
                 "All",
                 "Camisas"
             ]
+        },
+        {
+            "id": 10,
+            "foto": "assets/img/Camisa do Santos/camisaPrincipal.jpg",
+            "fotoItem": "../img/Camisa do Santos/camisaPrincipal.jpg",
+            "produto":"Camisa do Santos",
+            "descricao": "Camisa do Santos, 1ª linha",
+            "price": 149.99,
+            "tipos": [
+                "../img/Camisa do Santos/camisaPrincipal.jpg",
+                "../img/Camisa do Santos/camisaFrente1.jpg",
+                "../img/Camisa do Santos/camisaEscudo.jpg",
+                "../img/Camisa do Santos/camisaEscudo1.jpg",
+                "../img/Camisa do Santos/camisaGola.jpg",
+                "../img/Camisa do Santos/camisaGolaVerso.jpg",
+                "../img/Camisa do Santos/camisaLateralFrente.jpg",
+                "../img/Camisa do Santos/camisaManga.jpg",
+                "../img/Camisa do Santos/camisaPatrocinador.jpg",
+                "../img/Camisa do Santos/camisaVerso.jpg"
+            ],
+            "categorias": [
+                "All",
+                "Camisas"
+            ]
         }
         
     ]
