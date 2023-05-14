@@ -30,8 +30,8 @@
         },
         {
             "id": 3,
-            "foto": "assets/img/Camisa Flamengo/camisaPrincipal.jpg",
-            "fotoItem": "../img/Camisa Flamengo/camisaPrincipal.jpg",
+            "foto": "assets/img/Camisa Flamengo 22/23/camisaPrincipal.jpg",
+            "fotoItem": "../img/Camisa Flamengo 22/23/camisaPrincipal.jpg",
             "produto":"Camisa de Time - Flamengo",
             "descricao": "Camisa do Time do Flamengo, 1ª linha",
             "price": 149.99,
