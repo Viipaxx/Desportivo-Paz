@@ -14,6 +14,10 @@ a {
     color: inherit;
 }
 
+ul {
+    list-style: none;
+}
+
 body {
     background-color: rgb(255, 255, 255);
 }
@@ -54,15 +58,18 @@ body {
     cursor: pointer;
 }
 
-.product {
+.product a{
     height: 130px;
     border-radius: 10px;
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
     border: 1px solid transparent;
     background-color: rgb(248, 248, 248);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
 }
+
+
 
 .product-img {
     width: 30%;
@@ -72,10 +79,6 @@ body {
     border-radius: 10px;
     height: 100%;
     transition: .3s;
-}
-
-.product-img img:hover {
-    transform: translateX(50px) scale(1.3);
 }
 
 .product-info {
