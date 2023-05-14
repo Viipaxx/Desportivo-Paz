@@ -30,10 +30,28 @@
         },
         {
             "id": 3,
-            "foto": "assets/img/Luva/luva.jpg",
-            "fotoItem": "../img/Luva/luva.jpg",
+            "foto": "assets/img/Camisa Flamengo/camisaPrincipal.jpg",
+            "fotoItem": "../img/Camisa Flamengo/camisaPrincipal.jpg",
             "produto":"Camisa de Time - Flamengo",
             "descricao": "Camisa do Time do Flamengo, 1ª linha",
+            "price": 149.99,
+            "tipos": []
+        },
+        {
+            "id": 4,
+            "foto": "assets/img/Camisa Brasil/camisaPrincipal.jpg",
+            "fotoItem": "../img/Camisa Brasil/camisaPrincipal.jpg",
+            "produto":"Camisa de Time - Brasil",
+            "descricao": "Camisa da seleção Brasileira preta, 1ª linha",
+            "price": 149.99,
+            "tipos": []
+        },
+        {
+            "id": 5,
+            "foto": "assets/img/Camisa Brasil 19 20 Fora/camisaPrincipal.jpg",
+            "fotoItem": "../img/Camisa Brasil 19 20 Fora/camisaPrincipal.jpg",
+            "produto":"Camisa Brasil 19 20 Fora",
+            "descricao": "Camisa da seleção Brasileira 19 20 Fora, 1ª linha",
             "price": 149.99,
             "tipos": []
         }
