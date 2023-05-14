@@ -19,9 +19,9 @@
                 "../img/MAT-Q/meia vermelha.jpg"
             ],
             "categorias": [
-                "Futsal",
-                "Futebol",
+                "All",
                 "Basquete",
+                "Futebol",
                 "Vôlei"
             ]
         },
@@ -44,6 +44,7 @@
                 "../img/Camisa Flamengo 22/23/camisaManga.jpg"
             ],
             "categorias": [
+                "All",
                 "Camisas"
             ]
         },
@@ -65,6 +66,7 @@
                 "../img/Camisa Brasil/camisaVerso.jpg"
             ],
             "categorias": [
+                "All",
                 "Camisas"
             ]
         },
@@ -86,6 +88,7 @@
                 "../img/Camisa Brasil 19 20 Fora/camisaVerso.jpg"
             ],
             "categorias":[
+                "All",
                 "Camisas"
             ]
         },
@@ -106,6 +109,7 @@
                 "../img/Camisa Brasil Copa do mundo 2022/camisaVerso.jpg"
             ],
             "categorias": [
+                "All",
                 "Camisas"
             ]
         },
@@ -125,6 +129,7 @@
                 "../img/Camisa Brasil Copa do mundo 2022 azul/camisaVerso.jpg"
             ],
             "categorias": [
+                "All",
                 "Camisas"
             ]
         },
@@ -147,6 +152,7 @@
                 "../img/Camisa Corinthians 20/21/camisaVerso.jpg"
             ],
             "categorias": [
+                "All",
                 "Camisas"
             ]
         }
