@@ -46,6 +46,14 @@
             "descricao": "Camisa da seleção Brasileira preta, 1ª linha",
             "price": 149.99,
             "tipos": [
+                "../img/Camisa Brasil/camisaEscudo.jpg",
+                "../img/Camisa Brasil/camisaGola.jpg",
+                "../img/Camisa Brasil/camisaFrente1.jpg",
+                "../img/Camisa Brasil/camisaGolaVerso.jpg",
+                "../img/Camisa Brasil/camisaLateralFrente.jpg",
+                "../img/Camisa Brasil/camisaMarcaDagua.jpg",
+                "../img/Camisa Brasil/camisaPatrocinador.jpg",
+                "../img/Camisa Brasil/camisaVerso.jpg"
             ]
         },
         {
