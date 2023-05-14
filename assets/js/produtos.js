@@ -38,7 +38,6 @@ getMenuBar = (produto) => {
       let b = "";
       produto.map((product) => {
         product.categorias.filter((categoria) => {
-            console.log(product.categorias)
           if (categoria.toLowerCase() === cat.toLowerCase()) {
             b += 
                 `
