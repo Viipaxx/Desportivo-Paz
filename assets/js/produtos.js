@@ -26,6 +26,10 @@ updateProducts = (produto) => {
     }).join('')
 }
 
+getMenuBar = () => {
+    
+}
+
 (async () => {
     const produtos = await getProduct()
     setTimeout(() => {
