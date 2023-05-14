@@ -21,15 +21,6 @@
         },
         {
             "id": 2,
-            "foto": "assets/img/Luva/luva.jpg",
-            "fotoItem": "../img/Luva/luva.jpg",
-            "produto":"Luvas - Nike",
-            "descricao": "Luvas para goleiro, super confortável, 100% algodão",
-            "price": 79.99,
-            "tipos": []
-        },
-        {
-            "id": 3,
             "foto": "assets/img/Camisa Flamengo 22/23/camisaPrincipal.jpg",
             "fotoItem": "../img/Camisa Flamengo 22/23/camisaPrincipal.jpg",
             "produto":"Camisa de Time - Flamengo",
@@ -38,22 +29,40 @@
             "tipos": []
         },
         {
-            "id": 4,
+            "id": 3,
             "foto": "assets/img/Camisa Brasil/camisaPrincipal.jpg",
             "fotoItem": "../img/Camisa Brasil/camisaPrincipal.jpg",
             "produto":"Camisa de Time - Brasil",
             "descricao": "Camisa da seleção Brasileira preta, 1ª linha",
             "price": 149.99,
-            "tipos": []
+            "tipos": [
+                "../img/Camisa Brasil/camisaEscudo.jpg",
+                "../img/Camisa Brasil/camisaGola.jpg",
+                "../img/Camisa Brasil/camisaFrente1.jpg",
+                "../img/Camisa Brasil/camisaGolaVerso.jpg",
+                "../img/Camisa Brasil/camisaLateralFrente.jpg",
+                "../img/Camisa Brasil/camisaMarcaDagua.jpg",
+                "../img/Camisa Brasil/camisaPatrocinador.jpg",
+                "../img/Camisa Brasil/camisaVerso.jpg"
+            ]
         },
         {
-            "id": 5,
+            "id": 4,
             "foto": "assets/img/Camisa Brasil 19 20 Fora/camisaPrincipal.jpg",
             "fotoItem": "../img/Camisa Brasil 19 20 Fora/camisaPrincipal.jpg",
             "produto":"Camisa Brasil 19 20 Fora",
             "descricao": "Camisa da seleção Brasileira 19 20 Fora, 1ª linha",
             "price": 149.99,
-            "tipos": []
+            "tipos": [
+                "../img/Camisa Brasil 19 20 Fora/camisaEscudo.jpg",
+                "../img/Camisa Brasil 19 20 Fora/camisaGola.jpg",
+                "../img/Camisa Brasil 19 20 Fora/camisaFrente1.jpg",
+                "../img/Camisa Brasil 19 20 Fora/camisaGolaVerso.jpg",
+                "../img/Camisa Brasil 19 20 Fora/camisaLateralFrente.jpg",
+                "../img/Camisa Brasil 19 20 Fora/camisaMarcaDagua.jpg",
+                "../img/Camisa Brasil 19 20 Fora/camisaPatrocinador.jpg",
+                "../img/Camisa Brasil 19 20 Fora/camisaVerso.jpg"
+            ]
         }
         
     ]
