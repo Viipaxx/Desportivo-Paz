@@ -93,19 +93,19 @@
         },
         {
             "id": 6,
-            "foto": "assets/img/Camisa Brasil Copa do mundo 2022 (Azul)/camisaPrincipal.jpg",
-            "fotoItem": "../img/Camisa Brasil Copa do mundo 2022 (Azul)/camisaPrincipal.jpg",
+            "foto": "assets/img/Camisa Brasil Copa do mundo 2022 azul/camisaPrincipal.jpg",
+            "fotoItem": "../img/Camisa Brasil Copa do mundo 2022 azul/camisaPrincipal.jpg",
             "produto":"Camisa Brasil Copa do mundo 2022 - Azul",
             "descricao": "Camisa da seleção Brasileira Copa do mundo 2022 Azul, 1ª linha",
             "price": 149.99,
             "tipos": [
-                "../img/Camisa Brasil Copa do mundo 2022 (Azul)/camisaEscudo.jpg",
-                "../img/Camisa Brasil Copa do mundo 2022 (Azul)/camisaGola.jpg",
-                "../img/Camisa Brasil Copa do mundo 2022 (Azul)/camisaFrente1.jpg",
-                "../img/Camisa Brasil Copa do mundo 2022 (Azul)/camisaGolaVerso.jpg",
-                "../img/Camisa Brasil Copa do mundo 2022 (Azul)/camisaLateralFrente.jpg",
-                "../img/Camisa Brasil Copa do mundo 2022 (Azul)/camisaPatrocinador.jpg",
-                "../img/Camisa Brasil Copa do mundo 2022 (Azul)/camisaVerso.jpg"
+                "../img/Camisa Brasil Copa do mundo 2022 azul/camisaEscudo.jpg",
+                "../img/Camisa Brasil Copa do mundo 2022 azul/camisaGola.jpg",
+                "../img/Camisa Brasil Copa do mundo 2022 azul/camisaFrente1.jpg",
+                "../img/Camisa Brasil Copa do mundo 2022 azul/camisaGolaVerso.jpg",
+                "../img/Camisa Brasil Copa do mundo 2022 azul/camisaLateralFrente.jpg",
+                "../img/Camisa Brasil Copa do mundo 2022 azul/camisaPatrocinador.jpg",
+                "../img/Camisa Brasil Copa do mundo 2022 azul/camisaVerso.jpg"
             ]
         },
         {
