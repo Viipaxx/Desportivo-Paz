@@ -2,12 +2,13 @@
     "produtos": [
         {
             "id": 1,
-            "fotoItem": "../img/MAT-Q/fotoPrincipal.jpg",
             "foto": "assets/img/MAT-Q/fotoPrincipal.jpg",
+            "fotoItem": "../img/MAT-Q/fotoPrincipal.jpg",
             "produto": "Meias Antiderrapante",
             "descricao": "Meias Antiderrapante com costas em formarto de quadrado",
             "price": 15.99,
             "tipos": [
+                "../img/MAT-Q/fotoPrincipal.jpg",
                 "../img/MAT-Q/meia amarela.jpg",
                 "../img/MAT-Q/meia azul claro.jpg",
                 "../img/MAT-Q/meia azul escuro.jpg",
@@ -33,6 +34,7 @@
             "descricao": "Camisa do Flamengo 22 23, 1ª linha",
             "price": 149.99,
             "tipos": [
+                "../img/Camisa Flamengo 22/23/camisaPrincipal.jpg",
                 "../img/Camisa Flamengo 22/23/camisaEscudo.jpg",
                 "../img/Camisa Flamengo 22/23/camisaFrente1.jpg",
                 "../img/Camisa Flamengo 22/23/camisaGolaVerso.jpg",
@@ -56,6 +58,7 @@
             "descricao": "Camisa da seleção Brasileira preta, 1ª linha",
             "price": 149.99,
             "tipos": [
+                "../img/Camisa Brasil/camisaPrincipal.jpg",
                 "../img/Camisa Brasil/camisaEscudo.jpg",
                 "../img/Camisa Brasil/camisaGola.jpg",
                 "../img/Camisa Brasil/camisaFrente1.jpg",
@@ -78,6 +81,7 @@
             "descricao": "Camisa da seleção Brasileira 19 20 Fora, 1ª linha",
             "price": 149.99,
             "tipos": [
+                "../img/Camisa Brasil 19 20 Fora/camisaPrincipal.jpg",
                 "../img/Camisa Brasil 19 20 Fora/camisaEscudo.jpg",
                 "../img/Camisa Brasil 19 20 Fora/camisaGola.jpg",
                 "../img/Camisa Brasil 19 20 Fora/camisaFrente1.jpg",
@@ -100,6 +104,7 @@
             "descricao": "Camisa da seleção Brasileira Copa do mundo 2022, 1ª linha",
             "price": 149.99,
             "tipos": [
+                "../img/Camisa Brasil Copa do mundo 2022/camisaPrincipal.jpg",
                 "../img/Camisa Brasil Copa do mundo 2022/camisaGola.jpg",
                 "../img/Camisa Brasil Copa do mundo 2022/camisaFrente1.jpg",
                 "../img/Camisa Brasil Copa do mundo 2022/camisaGolaVerso.jpg",
@@ -121,6 +126,7 @@
             "descricao": "Camisa da seleção Brasileira Copa do mundo 2022 Azul, 1ª linha",
             "price": 149.99,
             "tipos": [
+                "../img/Camisa Brasil Copa do mundo 2022 azul/camisaPrincipal.jpg",
                 "../img/Camisa Brasil Copa do mundo 2022 azul/camisaEscudo.jpg",
                 "../img/Camisa Brasil Copa do mundo 2022 azul/camisaGolaVerso.jpg",
                 "../img/Camisa Brasil Copa do mundo 2022 azul/camisaFrente1.jpg",
@@ -141,6 +147,7 @@
             "descricao": "Camisa do Corinthians 20 21, 1ª linha",
             "price": 149.99,
             "tipos": [
+                "../img/Camisa Corinthians 20/21/camisaPrincipal.jpg",
                 "../img/Camisa Corinthians 20/21/camisaEscudo.jpg",
                 "../img/Camisa Corinthians 20/21/camisaFrente1.jpg",
                 "../img/Camisa Corinthians 20/21/camisaGola.jpg",
@@ -164,6 +171,7 @@
             "descricao": "Camisa Retrô Brasil 2002, 1ª linha",
             "price": 149.99,
             "tipos": [
+                "../img/Camisa Retrô Brasil 2002/camisaPrincipal.jpg",                
                 "../img/Camisa Retrô Brasil 2002/camisaEscudo.jpg",
                 "../img/Camisa Retrô Brasil 2002/camisaFrente1.jpg",
                 "../img/Camisa Retrô Brasil 2002/camisaGola.jpg",
@@ -187,6 +195,7 @@
             "descricao": "Camisa Cruzeiro, 1ª linha",
             "price": 149.99,
             "tipos": [
+                "../img/Camisa Cruzeiro/camisaPrincipal.jpg",
                 "../img/Camisa Cruzeiro/camisaFrente1.jpg",
                 "../img/Camisa Cruzeiro/camisaGola.jpg",
                 "../img/Camisa Cruzeiro/camisaGolaVerso.jpg",
