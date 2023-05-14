@@ -181,21 +181,20 @@
         },
         {
             "id": 9,
-            "foto": "assets/img/Camisa Retrô Brasil 2002/camisaPrincipal.jpg",
-            "fotoItem": "../img/Camisa Retrô Brasil 2002/camisaPrincipal.jpg",
-            "produto":"Camisa Retrô Brasil 2002",
-            "descricao": "Camisa Retrô Brasil 2002, 1ª linha",
+            "foto": "assets/img/Camisa Cruzeiro/camisaPrincipal.jpg",
+            "fotoItem": "../img/Camisa Cruzeiro/camisaPrincipal.jpg",
+            "produto":"Camisa Cruzeiro",
+            "descricao": "Camisa Cruzeiro, 1ª linha",
             "price": 149.99,
             "tipos": [
-                "../img/Camisa Retrô Brasil 2002/camisaEscudo.jpg",
-                "../img/Camisa Retrô Brasil 2002/camisaFrente1.jpg",
-                "../img/Camisa Retrô Brasil 2002/camisaGola.jpg",
-                "../img/Camisa Retrô Brasil 2002/camisaGolaVerso.jpg",
-                "../img/Camisa Retrô Brasil 2002/camisaLateral.jpg",
-                "../img/Camisa Retrô Brasil 2002/camisaLateralFrente.jpg",
-                "../img/Camisa Retrô Brasil 2002/camisaManga.jpg",
-                "../img/Camisa Retrô Brasil 2002/camisaPatrocinador.jpg",
-                "../img/Camisa Retrô Brasil 2002/camisaVerso.jpg"
+                "../img/Camisa Cruzeiro/camisaFrente1.jpg",
+                "../img/Camisa Cruzeiro/camisaGola.jpg",
+                "../img/Camisa Cruzeiro/camisaGolaVerso.jpg",
+                "../img/Camisa Cruzeiro/camisaLateralFrente.jpg",
+                "../img/Camisa Cruzeiro/camisaManga.jpg",
+                "../img/Camisa Cruzeiro/camisaMarcaDagua.jpg",
+                "../img/Camisa Cruzeiro/camisaPatrocinador.jpg",
+                "../img/Camisa Cruzeiro/camisaVerso.jpg"
             ],
             "categorias": [
                 "All",
