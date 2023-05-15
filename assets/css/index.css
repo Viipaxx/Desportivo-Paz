@@ -34,6 +34,7 @@ body {
 
 .top-header h1{
     font-family: 'Bruno Ace SC', cursive;
+    display: inline-block;
 }
 
 .top-nav ul{
@@ -56,6 +57,33 @@ body {
 
 .menu-bar {
     cursor: pointer;
+}
+
+.carrinho {
+    border: none;
+    position: absolute;
+    background-color: transparent;
+    font-size: 2rem;
+    top: 40px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.carrinho-compra {
+    display: none;
+    position: absolute;
+    top: 77px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 370px;
+    height: 500px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: rgb(131, 131, 131);
+}
+
+.hide {
+    display: block;
 }
 
 .product a{
