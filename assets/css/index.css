@@ -32,18 +32,18 @@ body {
     flex-direction: column;
 }
 
-.top-header h1{
+.top-header h1 {
     font-family: 'Bruno Ace SC', cursive;
     display: inline-block;
 }
 
-.top-nav .ul-menu-bar{
+.top-nav .ul-menu-bar {
     display: flex;
     list-style: none;
     overflow-y: hidden;
 }
 
-.top-nav .ul-menu-bar::-webkit-scrollbar{
+.top-nav .ul-menu-bar::-webkit-scrollbar {
     width: 0;
 }
 
@@ -97,14 +97,15 @@ body {
     margin: 20px;
 }
 
-.carrinho-compra .ul-carrinho-compra li{
+.carrinho-compra .ul-carrinho-compra li {
     margin-bottom: 20px;
     border: 1px solid;
-    border-radius: 10px;    
+    border-radius: 10px;
     height: 100px;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
-.carrinho-compra .content{
+
+.carrinho-compra .content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -136,7 +137,8 @@ body {
 .carrinho-compra #qtd-carrinho {
     font-size: 1.3rem;
 }
-    .carrinho-compra .btn-qtd-carrinho {
+
+.carrinho-compra .btn-qtd-carrinho {
     background-color: transparent;
     width: 30px;
     height: 40px;
@@ -149,7 +151,21 @@ body {
     cursor: pointer;
 }
 
-.product a{
+.content .info {
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .info span {
+    font-weight: bold;
+}
+
+.product a {
     height: 130px;
     border-radius: 10px;
     margin-bottom: 20px;
