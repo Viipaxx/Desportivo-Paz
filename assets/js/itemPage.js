@@ -1,16 +1,16 @@
 
-pegaImagem = () => {
+const pegaImagem = () => {
   const cores = document.querySelectorAll('.colors img')
-  
-  cores.forEach((e, s) => {
-      e.addEventListener("click", (element) => {
-          trocaImagemPrincipal(element.target.src, s)
 
-      })
+  cores.forEach((e, s) => {
+    e.addEventListener("click", (element) => {
+      trocaImagemPrincipal(element.target.src, s)
+
+    })
   })
 }
 
-trocaImagemPrincipal = (path, id) => {
+const trocaImagemPrincipal = (path, id) => {
 
   const imagemPrincipal = document.querySelector('#img-prod')
   imagemPrincipal.src = path
@@ -18,13 +18,13 @@ trocaImagemPrincipal = (path, id) => {
 
 }
 
-getNumberURL = () => {
+const getNumberURL = () => {
   var query = location.search.slice(1);
   var id = query.split("=");
   return id[1];
 };
 
-getIdItem = (produto) => {
+const getIdItem = (produto) => {
   produto.filter((e) => {
     if (e.id == getNumberURL()) {
       updateProduct(e);
@@ -32,23 +32,23 @@ getIdItem = (produto) => {
   });
 };
 
-getColors = (produto) => {
+const getColors = (produto) => {
 
-    if (produto.tipos.length > 0){
-        const maisFotos =  produto.tipos.map((tipo) => {
-            return `
+  if (produto.tipos.length > 0) {
+    const maisFotos = produto.tipos.map((tipo) => {
+      return `
             <li class="colors">
             <img src="${tipo}">
             </li>
             `
-        }).join('')
-        return maisFotos
-    } else {
-        return ""
-    }
-    }
-    
-updateProduct = (produto) => {
+    }).join('')
+    return maisFotos
+  } else {
+    return ""
+  }
+}
+
+const updateProduct = (produto) => {
   const content = document.querySelector(".content");
   document.title = produto.produto
   content.innerHTML = `
@@ -72,11 +72,12 @@ updateProduct = (produto) => {
            `;
 };
 
-(async () => {
-  const produtos = await getProduct();
-  setTimeout(() => {
-    getIdItem(produtos);
-    getBuyNow()
-    pegaImagem() 
-  }, 1000);
-})();
+  (async () => {
+    const produtos = await getProduct();
+    setTimeout(() => {
+      getIdItem(produtos);
+      getBuyNow()
+      pegaImagem()
+      adicionarCarrinho()
+    }, 1000);
+  })();

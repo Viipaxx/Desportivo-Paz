@@ -1,68 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <script src="https://kit.fontawesome.com/dab0ae2ff9.js" crossorigin="anonymous"
-  ></script>
-    <title>DP</title>
-  </head>
-  <body>
-    <div class="container">
-      <header class="top-header">
-        <div>
-          <a href="index.html">
-            <h1>Desportivo<br>Paz</h1>
-          </a>
-        </div>
-        <nav class="top-nav">
-          <ul class="ul-menu-bar">
-            <li class="menu-bar">All</li>
-            <li class="menu-bar">Camisas</li>
-            <li class="menu-bar">Futebol</li>
-            <li class="menu-bar">Basquete</li>
-            <li class="menu-bar">Natação</li>
-            <li class="menu-bar">Vôlei</li>
-          </ul>
-          <button class="carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="carrinho-compra">
-            <h3>Carrinho</h3>
-            <ul class="ul-carrinho-compra">
-              <li class="produto">
-                  <div class="content">
-                    <div class="img">
-                      <img src="assets/img/Camisa Brasil 19 20 Fora/camisaPrincipal.jpg" alt="">
-                    </div>
-                    <div class="info">
-                      <p>Product</p>
-                      <span>$ 149.49</span>
-                    </div>
-                    <div class="qtd">
-                      <button class="btn-qtd-carrinho">-</button>
-                      <span id="qtd-carrinho">0</span>
-                      <button class="btn-qtd-carrinho">+</button>
-                    </div>
-                  </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <main class="main-container">
-        <div class="products">
-            <ul>
-            </ul>
-        </div>
-      </main>
-      <footer class="footer-container">
 
-      </footer>
-    </div>
-    <script src="assets/js/api.js"></script>
-    <script src="assets/js/carrinho.js"></script>
-    <script src="assets/js/produtos.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <script src="https://kit.fontawesome.com/dab0ae2ff9.js" crossorigin="anonymous"></script>
+  <title>Desportivo Paz</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="top-header">
+      <div>
+        <a href="index.html">
+          <h1>Desportivo<br>Paz</h1>
+        </a>
+      </div>
+      <nav class="top-nav">
+        <ul class="ul-menu-bar">
+          <li class="menu-bar">All</li>
+          <li class="menu-bar">Camisas</li>
+          <li class="menu-bar">Futebol</li>
+          <li class="menu-bar">Basquete</li>
+          <li class="menu-bar">Natação</li>
+          <li class="menu-bar">Vôlei</li>
+        </ul>
+          <button class="carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="products">
+        <ul>
+        </ul>
+      </div>
+
+      <div class="cart-container">
+
+        <header>
+          <i class="fa-solid fa-xmark fecharCarrinho"></i>
+          <h1>Cart</h1>
+        </header>
+
+        <main>
+
+          <ul class="produtos-carrinho">
+            
+            <li class="item-produto">
+              <div class="item-img">
+                <img src="cartIdeia.webp" alt="">
+              </div>
+              <div class="item-info">
+                <h4>Nome do Produto</h4>
+                <span>Preço</span>
+                <div class="quantidade">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+                lixeira
+              </div>
+
+            </li>
+
+          </ul>
+
+        </main>
+
+      </div>
+
+    </main>
+    <footer class="footer-container">
+
+    </footer>
+  </div>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/carrinho.js"></script>
+</body>
+
 </html>
