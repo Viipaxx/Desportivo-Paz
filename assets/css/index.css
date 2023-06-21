@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Comforter&family=Rajdhani:wght@300;400&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
+
+
 }
 
 /* Generics */
@@ -133,8 +136,8 @@ body {
 }
 
 .cart-container {
-    height: 90%;
     width: 90%;
+    height: 1000px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -143,6 +146,7 @@ body {
     border: 1px solid #525252;
     border-radius: 40px;
     padding: 20px;
+    overflow-x: hidden;
 }
 
 .cart-container header {
@@ -155,9 +159,7 @@ body {
 
 .cart-container header i {
     font-size: 40px;
-    border: 1px solid;
     padding: 5px;
-    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -169,16 +171,91 @@ body {
 .cart-container .item-produto {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 400px;
+    gap: 30px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.cart-container .produtos-carrinho {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
 }
 
 .cart-container .item-produto .item-img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 100%;
 }
 
 .cart-container .item-produto .item-img img {
     width: 100%;
     height: 100%;
+}
+
+.cart-container .item-produto .item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 20px 5px;
+}
+
+.cart-container .item-produto .item-info h4 {
+    font-size: 26px;
+    font-family: 'Rajdhani', sans-serif;
+    width: 85%;
+}
+
+.cart-container .item-produto .item-info p {
+    font-size: 18px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.cart-container .item-produto .item-info2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.cart-container .item-produto .qtd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.cart-container .item-produto .qtd span {
+    font-size: 20px;
+}
+
+.cart-container .item-produto .qtd button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.cart-container .item-produto .valor-item-unidade {
+    font-family: 'Rajdhani', sans-serif;
+    /* font-weight: normal; */
+    font-size: 35px;
+}
+
+.cart-container .item-produto .item-info .removerItem {
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
 }
