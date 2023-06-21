@@ -135,6 +135,11 @@ body {
     cursor: pointer;
 }
 
+.product i:active {
+    right: 25px;
+    bottom:6px;
+}
+
 .cart-container {
     width: 90%;
     height: 1000px;
@@ -247,6 +252,11 @@ body {
     cursor: pointer;
 }
 
+.cart-container .item-produto .qtd button:active {
+    position: relative;
+    top: 3px;
+}
+
 .cart-container .item-produto .valor-item-unidade {
     font-family: 'Rajdhani', sans-serif;
     /* font-weight: normal; */
@@ -258,4 +268,8 @@ body {
     right: 10px;
     font-size: 25px;
     cursor: pointer;
+}
+
+.cart-container .item-produto .item-info .removerItem:active {
+    top: 15px;
 }
