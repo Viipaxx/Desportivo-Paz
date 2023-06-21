@@ -32,7 +32,7 @@ updateProducts = (produto) => {
         </a>
         <p>${element.descricao}</p>
         <span>$${element.price}</span>
-        <i class="fa-solid fa-cart-shopping itemCarrinho"></i>
+        <i class="fa-solid fa-cart-shopping itemCarrinho" id="${element.id}"></i>
         </div>
         </li>`;
     })
@@ -63,7 +63,7 @@ getMenuBar = (produto) => {
                       </a>
                       <p>${product.descricao}</p>
                       <span>$${product.price}</span>
-                      <i class="fa-solid fa-cart-shopping itemCarrinho"></i>
+                      <i class="fa-solid fa-cart-shopping itemCarrinho" id="${product.id}"></i>
                     </div>
                 </li>
                 `;
@@ -80,10 +80,12 @@ getMenuBar = (produto) => {
 adicionarCarrinho = () => {
   const carrinho = document.querySelectorAll('.itemCarrinho')
 
-  carrinho.forEach((item, index) => {
-    item.addEventListener('click', async () => {
+  carrinho.forEach((item) => {
 
-      itemAdicionadoAoCarrinho = await filtro(index + 1)
+    item.addEventListener('click', async (e) => {
+
+      itemAdicionadoAoCarrinho = await filtro(e.target.id)
+
       validarItem(itemAdicionadoAoCarrinho)
     })
   })
@@ -91,7 +93,15 @@ adicionarCarrinho = () => {
 
 validarItem = async (itemParaAdicionar) => {
 
+  const popupArea = document.querySelector('.pop-up')
   let temNoCarriho = false
+
+  popupArea.classList.toggle('hide')
+  setTimeout(() => {
+    popupArea.classList.toggle('hide')
+  }, 1499)
+
+
   if (cart.length == 0) {
 
     itemParaAdicionar.qtd = 1

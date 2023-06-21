@@ -1,0 +1,17 @@
+
+
+@media screen and (max-width: 400px) {
+    
+    .cart-container .item-produto .item-img {
+        display: flex;
+        align-items: center;
+        width: 250px;
+        height: 100%;
+    }
+    
+    .cart-container .item-produto .item-img img {
+        width: 100%;
+        height: 60%;
+    }        
+
+}

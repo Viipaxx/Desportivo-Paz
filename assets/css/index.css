@@ -137,12 +137,12 @@ body {
 
 .product i:active {
     right: 25px;
-    bottom:6px;
+    bottom: 6px;
 }
 
 .cart-container {
-    width: 90%;
-    height: 1000px;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -272,4 +272,52 @@ body {
 
 .cart-container .item-produto .item-info .removerItem:active {
     top: 15px;
+}
+
+.pop-up {
+    border: 1px solid black;
+    width: 300px;
+    height: 100px;
+    background-color: wheat;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.pop-up h4 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.barra {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    animation: adicionado 1.5s infinite;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes adicionado {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0;
+    }
 }
