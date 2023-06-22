@@ -1,12 +1,15 @@
 const areaCarrinho = document.querySelector('.cart-container')
 const mostrarCarrinho = document.querySelector('.carrinho')
+const indexProdutos = document.querySelector('.products')
 
 abrirCarrinho = () => {
     fecharCarrinho()
-    
+    payment()
+
     mostrarCarrinho.addEventListener('click', () => {
         areaCarrinho.classList.toggle('hide')
         mostrarCarrinho.classList.toggle('hide')
+        indexProdutos.classList.toggle('hide')
 
         showCarrinho()
     })
@@ -15,9 +18,8 @@ abrirCarrinho = () => {
 showCarrinho = async () => {
     const listaProdutos = document.querySelector('.produtos-carrinho')
     const carrinho = await pegarCarrinho()
-    const valorCarrinho = await pegarValorTotalCarrinho()
 
-    
+
     setTimeout(() => {
         listaProdutos.innerHTML = carrinho.map((e) => {
             return `
@@ -38,16 +40,17 @@ showCarrinho = async () => {
                     </div>
                     <i class="fa-solid fa-trash removerItem"></i>
                 </div>
-            `           
+            `
         }).join('')
         alterarQuantidade()
+        atualizarValorCarrinho()
     }, 500)
 
 
 }
 
 alterarQuantidade = async () => {
-    
+
     const minLimite = 0
     const quantidade = document.querySelectorAll('.quantidade-produto')
     const aumentarQuantidade = document.querySelectorAll('.aumentar-quantidade')
@@ -60,6 +63,7 @@ alterarQuantidade = async () => {
         prod.addEventListener('click', () => {
             carrinho[index].qtd += 1
             quantidade[index].innerHTML = carrinho[index].qtd
+            atualizarValorCarrinho()
         })
     })
 
@@ -67,14 +71,17 @@ alterarQuantidade = async () => {
         prod.addEventListener('click', () => {
 
             carrinho[index].qtd -= 1
+            atualizarValorCarrinho()
 
-            if (carrinho[index].qtd == minLimite){
+            if (carrinho[index].qtd == minLimite) {
 
                 carrinho.splice(index, 1)
                 showCarrinho()
-                
-            }else {
+                atualizarValorCarrinho()
+
+            } else {
                 quantidade[index].innerHTML = carrinho[index].qtd
+                atualizarValorCarrinho()
             }
 
         })
@@ -84,6 +91,7 @@ alterarQuantidade = async () => {
         prod.addEventListener('click', () => {
             carrinho.splice(index, 1)
             showCarrinho()
+            atualizarValorCarrinho()
         })
     })
 
@@ -91,11 +99,30 @@ alterarQuantidade = async () => {
 
 fecharCarrinho = () => {
     const voltar = document.querySelector('.fecharCarrinho')
-    
+
     voltar.addEventListener('click', () => {
         areaCarrinho.classList.toggle('hide')
         mostrarCarrinho.classList.toggle('hide')
+        indexProdutos.classList.toggle('hide')
     })
+}
+
+atualizarValorCarrinho = async () => {
+    const areaValor = document.querySelector('#valorTotal')
+    const valorCarrinho = await calcularValorCarrinho()
+
+
+    areaValor.innerHTML = `${valorCarrinho.toFixed(2)}$`
+}
+
+calcularValorCarrinho = async () => {
+    const carrinho = await pegarCarrinho()
+
+    const valorCarrinho = carrinho.map(e => e.price * e.qtd).reduce((curr, arr) => {
+        return curr + arr
+    }, 0)
+
+    return valorCarrinho
 }
 
 pegarCarrinho = async () => {
@@ -103,9 +130,20 @@ pegarCarrinho = async () => {
     return carrinho
 }
 
-pegarValorTotalCarrinho = () => {
-    const valorTotalCarrinho = getValorTotalCarrinho()
-    return valorTotalCarrinho
+payment = async () => {
+
+    const pay = document.querySelector('#button-pagamento')
+    const carrinho = await pegarCarrinho()
+
+    pay.addEventListener('click', () => {
+
+        if (carrinho.length === 0) {
+            alert('O carrinho está vazio.')
+        } else {
+            alert('Você está sendo direcionado para área de pagamento!')
+        }
+
+    })
 }
 
 (async () => {

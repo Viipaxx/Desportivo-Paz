@@ -1,12 +1,7 @@
 const cart = []
-let valorTotalCarrinho = 0
 
 getCart = () => {
   return cart
-}
-
-getValorTotalCarrinho = () => {
-  return valorTotalCarrinho
 }
 
 filtro = async (id) => {
@@ -123,15 +118,10 @@ validarItem = async (itemParaAdicionar) => {
 
   }
 
-  setValorCarrinho()
-
 }
 
-setValorCarrinho = () => {
-  const valorCarrinho = cart.map(e => e.price * e.qtd).reduce((curr, arr) => {
-    return curr + arr
-  }, 0)
-  valorTotalCarrinho += valorCarrinho
+adicionarProduto = (index, qtd) => {
+  cart[index].qtd += qtd 
 }
 
 (async () => {
