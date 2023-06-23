@@ -62,7 +62,6 @@ updateProduct = async (id) => {
       `
 
   idItem = id
-  console.log(idItem)
   pegaImagem()
 
 }
