@@ -76,6 +76,13 @@ adicionarCarrinho = () => {
     item.addEventListener('click', async (e) => {
 
       itemAdicionadoAoCarrinho = await filtro(e.target.id)
+      
+      const popupArea = document.querySelector('.pop-up')
+
+      popupArea.classList.toggle('hide')
+      setTimeout(() => {
+        popupArea.classList.toggle('hide')
+      }, 1499)
 
       validarItem(itemAdicionadoAoCarrinho)
     })
@@ -84,14 +91,7 @@ adicionarCarrinho = () => {
 
 validarItem = async (itemParaAdicionar) => {
 
-  const popupArea = document.querySelector('.pop-up')
   let temNoCarriho = false
-
-  popupArea.classList.toggle('hide')
-  setTimeout(() => {
-    popupArea.classList.toggle('hide')
-  }, 1499)
-
 
   if (cart.length == 0) {
 

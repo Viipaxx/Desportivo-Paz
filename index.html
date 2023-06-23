@@ -50,29 +50,38 @@
 
           <i class="fa-solid fa-xmark icon-back"></i>
 
-          <i class="fa-solid fa-basket-shopping adicionar_carrinho"></i>
+          <i class="fa-solid fa-basket-shopping adicionar_carrinho addToCart"></i>
 
         </header>
 
         <main>
 
-          <div class="item-img">
-            <img src="assets/img/Camisas Polo Brasil/Azul/284917713_578018433689617_2127557341944787730_n.jpg" alt="">
+          <div class="secao-item">
+
+            <div class="item-img">
+              <img src="assets/img/Camisas Polo Brasil/Azul/284917713_578018433689617_2127557341944787730_n.jpg" alt="">
+            </div>
+
+            <div class="item-imagens">
+              <ul class="imagens">
+                <li class="outras_imagens"><img src="cartIdeia.webp" alt=""></li>
+              </ul>
+            </div>
+
+            <div class="item-info">
+              <h3 id="product">loading...</h3>
+              <p class="description" id="description">loading...</p>
+              <p class="price">Price: <span id="price">loading...</span></p>
+            </div>
+
           </div>
 
-          <div class="item-imagens">
-            <ul class="imagens">
-              <li class="outras_imagens"><img src="cartIdeia.webp" alt=""></li>
-            </ul>
-          </div>
+          <button class="button addToCart">Add To Cart</button>
 
-          <div class="item-info">
-            <h3 id="product">loading...</h3>
-            <p class="description" id="description">loading...</p>
-            <p class="price">Price: <span id="price">loading...</span></p>
+          <div class="pop-up hide">
+            <h4>Item adicionado com sucesso!</h4>
+            <div class="barra"></div>
           </div>
-
-          <button class="button">Add To Cart</button>
 
         </main>
 
@@ -97,10 +106,10 @@
 
           </div>
 
-            <div class="desconto-cupom hide">
-              <p id="cupom-msg"></p>
-              <div class="cupom-barra"></div>
-            </div>
+          <div class="desconto-cupom hide">
+            <p id="cupom-msg"></p>
+            <div class="cupom-barra"></div>
+          </div>
 
           <div class="preco-total">
             <p>Total Price:</p>

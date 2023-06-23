@@ -1,3 +1,5 @@
+let idItem = -1
+
 pegaImagem = () => {
   const imagens = document.querySelectorAll('.outras_imagens img')
 
@@ -21,9 +23,6 @@ getColors = async (id) => {
 
   const produto = await filtro(id)
 
-  console.log(produto)
-
-
   const maisFotos = produto.tipos.map((tipo) => {
     return `
             <li class="outras_imagens">
@@ -40,13 +39,13 @@ updateProduct = async (id) => {
 
   const produto = await filtro(id)
 
-  const areaItem = document.querySelector('.item-container main')
+  const areaItem = document.querySelector('.secao-item')
 
   const maisFotos = await getColors(id)
 
   areaItem.innerHTML = `
       <div class="item-img">
-      <img src="${produto.foto}" alt="${produto.produto}">
+      <img src="${produto.foto}" alt="${produto.produto}" id="img-prod">
       </div>
       
       <div class="item-imagens">
@@ -59,12 +58,54 @@ updateProduct = async (id) => {
         <h3 id="product">${produto.produto}</h3>
         <p class="description" id="description">${produto.descricao}</p>
         <p class="price">Price: <span id="price">${produto.price}</span></p>
-        </div>
-
-      <button class="button">Add To Cart</button>
-      
+        </div>      
       `
 
-      pegaImagem()
+  idItem = id
+  console.log(idItem)
+  pegaImagem()
+
 }
 
+adicionarAoCarrinho =  () => {
+  const add = document.querySelectorAll('.addToCart')
+  add.forEach(e => {
+
+    e.addEventListener('click', async () => {
+      
+      const popupArea = document.querySelector('.item-container .pop-up')
+    
+      popupArea.classList.toggle('hide')
+      setTimeout(() => {
+        popupArea.classList.toggle('hide')
+      }, 1499)
+      
+      const id = await filtro(idItem)
+      
+      validarItem(id)
+      
+    })
+  })
+
+}
+
+voltarIndex = () => {
+  const indexProdutos = document.querySelector('.products')
+  const topHeader = document.querySelector('.top-header')
+  const areaItem = document.querySelector('.item-container')
+  const voltar = document.querySelector('.icon-back')
+
+  voltar.addEventListener('click', () => {
+
+    indexProdutos.classList.toggle('hide')
+    topHeader.classList.toggle('hide')
+    areaItem.classList.toggle('hide')
+  })
+}
+
+(() => {
+  setTimeout(() => {
+    adicionarAoCarrinho()
+    voltarIndex()
+  }, 1000);
+})();
