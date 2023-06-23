@@ -1,14 +1,17 @@
 const areaCarrinho = document.querySelector('.cart-container')
 const mostrarCarrinho = document.querySelector('.carrinho')
 const indexProdutos = document.querySelector('.products')
+const topHeader = document.querySelector('.top-header')
 
 abrirCarrinho = () => {
     fecharCarrinho()
     payment()
-
+    
     mostrarCarrinho.addEventListener('click', () => {
+        
+        
         areaCarrinho.classList.toggle('hide')
-        mostrarCarrinho.classList.toggle('hide')
+        topHeader.classList.toggle('hide')
         indexProdutos.classList.toggle('hide')
 
         showCarrinho()
@@ -102,7 +105,7 @@ fecharCarrinho = () => {
 
     voltar.addEventListener('click', () => {
         areaCarrinho.classList.toggle('hide')
-        mostrarCarrinho.classList.toggle('hide')
+        topHeader.classList.toggle('hide')
         indexProdutos.classList.toggle('hide')
     })
 }

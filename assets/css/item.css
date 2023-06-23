@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #525252;
+    overflow-x: hidden;
+}
+
+.item-container header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    position: absolute;
+}
+
+.item-container header i {
+    color: black;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border: 1px outset;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+.item-container .item-img {
+    width: 600px;
+}
+.item-container .item-img img {
+    width: 100%;
+}
+
+.imagens {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 3px;
+    margin-bottom: 20px;
+}
+
+.outras_imagens {
+    width: 35px;
+    height: 35px;
+    transition: transform .2s;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.outras_imagens img{
+    max-width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 0 0.8px;
+}
+
+.content-info h3 {
+    font-size: 26px;
+}
+
+.description {
+    margin: 20px 0;
+    color: #888888;
+    font-size: 18px;
+}
+
+.price {
+    margin: 30px 0;
+    font-size: 20px;
+    color: #222;
+    font-weight: 500;
+}
+
+.price span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}

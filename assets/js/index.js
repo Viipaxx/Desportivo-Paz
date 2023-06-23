@@ -22,9 +22,7 @@ updateProducts = (produto) => {
       <img src="${element.foto}" alt="${element.produto}">
       </div>
       <div class="product-info">
-      <a href="assets/html/itemPage.html?name=${element.id}">
         <h3 id="${element.id}" class="produto">${element.produto}</h3>
-        </a>
         <p>${element.descricao}</p>
         <span>$${element.price}</span>
         <i class="fa-solid fa-cart-shopping itemCarrinho" id="${element.id}"></i>
@@ -53,9 +51,7 @@ getMenuBar = (produto) => {
                 <img src="${product.foto}" alt="${product.produto}">
                 </div>
                 <div class="product-info">
-                <a href="assets/html/itemPage.html?name=${product.id}">
                       <h3 id="${product.id}" class="produto">${product.produto}</h3>
-                      </a>
                       <p>${product.descricao}</p>
                       <span>$${product.price}</span>
                       <i class="fa-solid fa-cart-shopping itemCarrinho" id="${product.id}"></i>
@@ -121,7 +117,25 @@ validarItem = async (itemParaAdicionar) => {
 }
 
 adicionarProduto = (index, qtd) => {
-  cart[index].qtd += qtd 
+  cart[index].qtd += qtd
+}
+
+abrirItem = () => {
+  const indexProdutos = document.querySelector('.products')
+  const topHeader = document.querySelector('.top-header')
+  const produto = document.querySelectorAll('.produto')
+  const areaItem = document.querySelector('.item-container')
+
+  produto.forEach(e => {
+    e.addEventListener('click', (element) => {
+      
+      indexProdutos.classList.toggle('hide')
+      topHeader.classList.toggle('hide')
+      areaItem.classList.toggle('hide')
+
+      updateProduct(element.target.id)
+    })
+  })
 }
 
 (async () => {
@@ -130,5 +144,6 @@ adicionarProduto = (index, qtd) => {
     updateProducts(produtos);
     getMenuBar(produtos);
     adicionarCarrinho()
+    abrirItem()
   }, 1000);
 })();

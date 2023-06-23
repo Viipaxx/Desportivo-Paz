@@ -1,0 +1,40 @@
+.cupom-area {
+    width: 100vw;
+
+}
+
+.desconto-cupom {
+    border: 1px solid black;
+    width: 500px;
+    height: 162px;
+    background-color: wheat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    position: fixed;
+}
+
+.cupom-barra {
+    width: 95%;
+    margin: auto;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    border-radius: 5px;
+    animation: adicionado 2s infinite;
+}
+
+.desconto-cupom p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.desconto-cupom p::first-line {
+    line-height: 3;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}

@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/cupom.css">
+  <link rel="stylesheet" href="assets/css/item.css">
   <link rel="stylesheet" href="assets/css/responsivo.css">
   <script src="https://kit.fontawesome.com/dab0ae2ff9.js" crossorigin="anonymous"></script>
   <title>Desportivo Paz</title>
@@ -29,7 +31,7 @@
           <li class="menu-bar">Natação</li>
           <li class="menu-bar">Vôlei</li>
         </ul>
-          <button class="carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
+        <button class="carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
       </nav>
     </header>
     <main class="main-container">
@@ -40,6 +42,40 @@
           <h4>Item adicionado com sucesso!</h4>
           <div class="barra"></div>
         </div>
+      </div>
+
+      <div class="item-container hide">
+
+        <header>
+
+          <i class="fa-solid fa-xmark icon-back"></i>
+
+          <i class="fa-solid fa-basket-shopping adicionar_carrinho"></i>
+
+        </header>
+
+        <main>
+
+          <div class="item-img">
+            <img src="assets/img/Camisas Polo Brasil/Azul/284917713_578018433689617_2127557341944787730_n.jpg" alt="">
+          </div>
+
+          <div class="item-imagens">
+            <ul class="imagens">
+              <li class="outras_imagens"><img src="cartIdeia.webp" alt=""></li>
+            </ul>
+          </div>
+
+          <div class="item-info">
+            <h3 id="product">loading...</h3>
+            <p class="description" id="description">loading...</p>
+            <p class="price">Price: <span id="price">loading...</span></p>
+          </div>
+
+          <button class="button">Add To Cart</button>
+
+        </main>
+
       </div>
 
       <div class="cart-container hide">
@@ -58,12 +94,18 @@
 
           <div class="area-cupom">
             <input type="text" name="cupom" id="cupom" placeholder="Enter promocode &rightarrow;">
+
           </div>
+
+            <div class="desconto-cupom hide">
+              <p id="cupom-msg"></p>
+              <div class="cupom-barra"></div>
+            </div>
 
           <div class="preco-total">
             <p>Total Price:</p>
             <span id="valorTotal">0$</span>
-            <button id="button-pagamento">Pay</button>
+            <button id="button-pagamento" class="button">Pay</button>
           </div>
 
         </main>
@@ -78,6 +120,8 @@
   <script src="assets/js/api.js"></script>
   <script src="assets/js/index.js"></script>
   <script src="assets/js/carrinho.js"></script>
+  <script src="assets/js/cupom.js"></script>
+  <script src="assets/js/item.js"></script>
 </body>
 
 </html>
