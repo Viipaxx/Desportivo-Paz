@@ -1,6 +1,4 @@
-
-
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 350px) {
 
     .top-header div {
         height: 125px;
@@ -49,14 +47,73 @@
         display: none;
     }
 
+    .pop-up {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    /* Carrinho */
+
+    .produtos-carrinho {
+        margin: 0;
+    }
+
+    .cart-container .item-produto {
+        gap: 0;
+        border: 1px solid transparent;
+        border-radius: 7px;
+        height: auto;
+    }
+
+    .cart-container .item-produto .item-info {
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .cart-container .item-produto .item-info p {
+        display: none;
+    }
+
+    .cart-container .item-produto .item-info h4 {
+        font-size: 16px;
+    }
+
+    .cart-container .item-produto .item-info .removerItem {
+        top: 10px;
+    }
+
+    .cart-container .item-produto .item-img img {
+        width: 100px;
+        height: 135px;
+        border-radius: 7px;
+    }
+
+    .cart-container .item-produto .item-info2 {
+        flex-direction: column;
+    }
+
+    .desconto-cupom {
+        width: 250px;
+        padding: 0;
+        height: 100px;
+        border-radius: 7px;
+    }
+
+    #cupom-msg {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+
 }
 
 /* até 480 px */
 @media screen and (max-width: 480px) {
-    
-    .cart-container .item-produto {
+
+    /* .cart-container .item-produto {
         gap: 10px;
-    }
+    } */
 
     .cart-container .item-produto .item-img {
         display: flex;
@@ -64,22 +121,7 @@
         width: 250px;
         height: 100%;
     }
-    
-    .cart-container .item-produto .item-img img {
-        width: 100%;
-        height: 60%;
-    }     
 
-    .cart-container .item-produto .item-info h4 {
-        font-size: 21px;
-    }
-
-    .cart-container .item-produto .item-info p {
-        font-size: 15px;
-        font-family: 'Rajdhani', sans-serif;
-        width: 85%;
-    }
-    
     .cart-container .item-produto .valor-item-unidade {
         font-family: 'Rajdhani', sans-serif;
         font-size: 25px;

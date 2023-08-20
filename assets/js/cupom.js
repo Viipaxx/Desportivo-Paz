@@ -16,7 +16,7 @@ cupom.addEventListener("keyup", ({ key }) => {
 
             if (valorDesconto == 'VIIPAXX_'){
                 
-                mensagem = 'Cupom resgatado com sucesso! <br> Você adquiriu um cupom que dá direito a 20% de desconto e frete grátis.'
+                mensagem = 'Você adquiriu um cupom que dá direito a 20% de desconto e frete grátis.'
                 msgCupom.innerHTML = mensagem
 
                 areaCupomMSG.classList.toggle('hide')
@@ -27,7 +27,7 @@ cupom.addEventListener("keyup", ({ key }) => {
 
             } else if (codigoCupom == 'PACOCA_S21') {
 
-                mensagem = 'Cupom resgatado com sucesso! <br> Você adquiriu um cupom que dá direito a frete grátis.'
+                mensagem = 'Você adquiriu um cupom que dá direito a frete grátis.'
                 msgCupom.innerHTML = mensagem
 
                 areaCupomMSG.classList.toggle('hide')
@@ -38,7 +38,7 @@ cupom.addEventListener("keyup", ({ key }) => {
 
             }else if (codigoCupom == '20PORCENTO') {
                 
-                mensagem = 'Cupom resgatado com sucesso! <br> Você adquiriu um cupom que dá direito a 20% de desconto.'
+                mensagem = 'Você adquiriu um cupom que dá direito a 20% de desconto.'
                 msgCupom.innerHTML = mensagem
 
                 areaCupomMSG.classList.toggle('hide')
@@ -49,7 +49,7 @@ cupom.addEventListener("keyup", ({ key }) => {
 
             }else if (codigoCupom == '10PORCENTO') {
                 
-                mensagem = 'Cupom resgatado com sucesso! <br> Você adquiriu um cupom que dá direito a 10% de desconto.'
+                mensagem = 'Você adquiriu um cupom que dá direito a 10% de desconto.'
                 msgCupom.innerHTML = mensagem
 
                 areaCupomMSG.classList.toggle('hide')

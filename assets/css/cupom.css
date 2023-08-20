@@ -1,6 +1,5 @@
 .cupom-area {
     width: 100vw;
-
 }
 
 .desconto-cupom {
@@ -32,9 +31,9 @@
     font-size: 18px;
 }
 
-.desconto-cupom p::first-line {
+/* .desconto-cupom p::first-line {
     line-height: 3;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-}
+} */
